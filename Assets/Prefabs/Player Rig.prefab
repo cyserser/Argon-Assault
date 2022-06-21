@@ -117,7 +117,7 @@ Transform:
   - {fileID: 8053245679875213980}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 26.843}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &5737232609046079259
 Animator:
   serializedVersion: 4
@@ -145,6 +145,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5737232609046079236}
     m_Modifications:
+    - target: {fileID: 1759774646, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
+      propertyPath: explosionVFX
+      value: 
+      objectReference: {fileID: 736072543816451071}
+    - target: {fileID: 1759774646, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
+      propertyPath: explosionParticle
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 458364790881036143, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458364790881036143, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458364790881036143, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458364790881036143, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458364790881036143, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458364790881036143, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3929233340156688380, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -155,7 +187,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3929233340156688380, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 3929233340156688380, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -193,8 +225,42 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player Ship
       objectReference: {fileID: 0}
+    - target: {fileID: 6013042951198441118, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2cbfbbcf3e223344a83f96898c93ddc9, type: 2}
+    - target: {fileID: 7885843711296111991, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
+--- !u!198 &736072543816451071 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 6013042951198441119, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
+  m_PrefabInstance: {fileID: 6432706661823053152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7244375264687886374 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4453110376570645830, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
+  m_PrefabInstance: {fileID: 6432706661823053152}
+  m_PrefabAsset: {fileID: 0}
+--- !u!54 &1759774648
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7244375264687886374}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &8053245679875213980 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3929233340156688380, guid: 3326766f73b506d42b52cf3301c7fa8b, type: 3}
