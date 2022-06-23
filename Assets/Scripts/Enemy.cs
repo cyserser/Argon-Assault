@@ -8,7 +8,7 @@ public class Enemy : MonoBehaviour
     [SerializeField] ParticleSystem enemyHitVFX;
     [SerializeField] int amountToAdd = 10;
     [SerializeField] int hitPoints;
-
+    
     ScoreBoard scoreBoard;
     GameObject parentGameObject;
 
@@ -37,7 +37,7 @@ public class Enemy : MonoBehaviour
 
     void DestroyEnemy()
     {
-        if(hitPoints <= 0)
+        if(hitPoints < 1)
         {
             ParticleSystem vfx = Instantiate(enemyDeathVFX, transform.position, Quaternion.identity);
             vfx.transform.parent = parentGameObject.transform;
